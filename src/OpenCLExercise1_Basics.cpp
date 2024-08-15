@@ -12,137 +12,45 @@
 #include <OpenCL/Program.hpp>
 #include <OpenCL/cl-patched.hpp>
 
+#include <cnpy/cnpy.h>
 #include <cmath>
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <iomanip>
 
 //////////////////////////////////////////////////////////////////////////////
 // CPU implementation
 //////////////////////////////////////////////////////////////////////////////
-void calculateHost(const std::vector<float>& h_input,
-                   std::vector<float>& h_output) {
-  for (std::size_t i = 0; i < h_output.size(); i++)
-    h_output[i] = std::cos(h_input[i]);
-}
 
-//////////////////////////////////////////////////////////////////////////////
-// Main function
-//////////////////////////////////////////////////////////////////////////////
-int main(int argc, char** argv) {
-  std::cout << "------------------------------------------------" << std::endl;
-  std::cout << "OpenCL Exercise 1: Basics" << std::endl;
-  std::cout << "------------------------------------------------" << std::endl;
+int main() {
+    // Load the .npy file
+    cnpy::NpyArray arr = cnpy::npy_load("/home/sandy/Downloads/OpenCLExercise1_Basics/Sinogram_0.5.npy");
 
-  // Create a context
-  cl::Context context(CL_DEVICE_TYPE_GPU);
-
-  // Get the first device of the context
-  std::cout << "Context has " << context.getInfo<CL_CONTEXT_DEVICES>().size()
-            << " devices" << std::endl;
-  cl::Device device = context.getInfo<CL_CONTEXT_DEVICES>()[0];
-  std::vector<cl::Device> devices;
-  devices.push_back(device);
-  OpenCL::printDeviceInfo(std::cout, device);
-
-  // Create a command queue
-  cl::CommandQueue queue(context, device, CL_QUEUE_PROFILING_ENABLE);
-
-  // Load the source code
-  extern unsigned char OpenCLExercise1_Basics_cl[];
-  extern unsigned int OpenCLExercise1_Basics_cl_len;
-  cl::Program program(context,
-                      std::string((const char*)OpenCLExercise1_Basics_cl,
-                                  OpenCLExercise1_Basics_cl_len));
-  // Compile the source code. This is similar to program.build(devices) but will print more detailed error messages
-  OpenCL::buildProgram(program, devices);
-
-  // Create a kernel object
-  cl::Kernel kernel1(program, "kernel1");
-
-  // Declare some values
-  std::size_t wgSize = 128;  // Number of work items per work group
-  std::size_t count =
-      wgSize * 100000;  // Overall number of work items = Number of elements
-  std::size_t size = count * sizeof(float);  // Size of data in bytes
-
-  // Allocate space for input data and for output data from CPU and GPU on the host
-  std::vector<float> h_input(count);
-  std::vector<float> h_outputCpu(count);
-  std::vector<float> h_outputGpu(count);
-
-  // Allocate space for input and output data on the device
-  cl::Buffer d_input(context, CL_MEM_READ_WRITE, size);
-  cl::Buffer d_output(context, CL_MEM_READ_WRITE, size);
-
-  // Initialize memory to 0xff (useful for debugging because otherwise GPU memory will contain information from last execution)
-  memset(h_input.data(), 255, size);
-  memset(h_outputCpu.data(), 255, size);
-  memset(h_outputGpu.data(), 255, size);
-  queue.enqueueWriteBuffer(d_input, true, 0, size, h_input.data());
-  queue.enqueueWriteBuffer(d_output, true, 0, size, h_outputGpu.data());
-
-  // Initialize input data with more or less random values
-  for (std::size_t i = 0; i < count; i++) h_input[i] = ((i * 1009) % 31) * 0.1;
-
-  // Do calculation on the host side
-  Core::TimeSpan cpuStart = Core::getCurrentTime();
-  calculateHost(h_input, h_outputCpu);
-  Core::TimeSpan cpuEnd = Core::getCurrentTime();
-
-  // Copy input data to device
-  cl::Event copy1;
-  queue.enqueueWriteBuffer(d_input, true, 0, size, h_input.data(), NULL,
-                           &copy1);
-
-  // Launch kernel on the device
-  cl::Event execution;
-  kernel1.setArg<cl::Buffer>(0, d_input);
-  kernel1.setArg<cl::Buffer>(1, d_output);
-  queue.enqueueNDRangeKernel(kernel1, 0, count, wgSize, NULL, &execution);
-
-  // Copy output data back to host
-  cl::Event copy2;
-  queue.enqueueReadBuffer(d_output, true, 0, size, h_outputGpu.data(), NULL,
-                          &copy2);
-
-  // Print performance data
-  Core::TimeSpan cpuTime = cpuEnd - cpuStart;
-  Core::TimeSpan gpuTime = OpenCL::getElapsedTime(execution);
-  Core::TimeSpan copyTime1 = OpenCL::getElapsedTime(copy1);
-  Core::TimeSpan copyTime2 = OpenCL::getElapsedTime(copy2);
-  Core::TimeSpan copyTime = copyTime1 + copyTime2;
-  Core::TimeSpan overallGpuTime = gpuTime + copyTime;
-  std::cout << "CPU Time: " << cpuTime.toString() << std::endl;
-  std::cout << "Memory copy Time: " << copyTime.toString() << std::endl;
-  std::cout << "GPU Time w/o memory copy: " << gpuTime.toString()
-            << " (speedup = " << (cpuTime.getSeconds() / gpuTime.getSeconds())
-            << ")" << std::endl;
-  std::cout << "GPU Time with memory copy: " << overallGpuTime.toString()
-            << " (speedup = "
-            << (cpuTime.getSeconds() / overallGpuTime.getSeconds()) << ")"
-            << std::endl;
-
-  // Check whether results are correct
-  std::size_t errorCount = 0;
-  for (std::size_t i = 0; i < count; i++) {
-    // Allow small differences between CPU and GPU results (due to different rounding behavior)
-    if (!(std::abs(h_outputCpu[i] - h_outputGpu[i]) <= 1e-5)) {
-      if (errorCount < 15)
-        std::cout << "Result for " << i << " is incorrect: GPU value is "
-                  << h_outputGpu[i] << ", CPU value is " << h_outputCpu[i]
-                  << std::endl;
-      else if (errorCount == 15)
-        std::cout << "..." << std::endl;
-      errorCount++;
+    // Ensure the data is two-dimensional and of type float
+    if (arr.shape.size() != 2 || arr.word_size != sizeof(float)) {
+        std::cerr << "Error: Expected a 2D array of floats." << std::endl;
+        return 1;
     }
-  }
-  if (errorCount != 0) {
-    std::cout << "Found " << errorCount << " incorrect results" << std::endl;
-    return 1;
-  }
 
-  std::cout << "Success" << std::endl;
+    // Extract the data
+    float* data = arr.data<float>();
 
-  return 0;
+    // Get the shape of the array
+    size_t rows = arr.shape[0];
+    size_t cols = arr.shape[1];
+
+    std::cout << "Array shape: " << rows << " rows x " << cols << " columns" << std::endl;
+
+    // Print the first 3 rows of data
+    size_t rows_to_print = std::min(size_t(3), rows);
+    for (size_t i = 0; i < rows_to_print; ++i) {
+        std::cout << "Row " << i << ": ";
+        for (size_t j = 0; j < cols; ++j) {
+            std::cout << std::setw(10) << std::fixed << std::setprecision(4) << data[i * cols + j] << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    return 0;
 }

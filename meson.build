@@ -9,9 +9,14 @@ project(
     ],
 )
 
+
+# Include subdirectories
 subdir('lib')
 
-executable('OpenCLExercise1_Basics',
+
+# Define the executable
+executable(
+    'OpenCLExercise1_Basics',
     [
         'src/OpenCLExercise1_Basics.cpp',
         xxd.process('src/OpenCLExercise1_Basics.cl'),
@@ -19,8 +24,9 @@ executable('OpenCLExercise1_Basics',
     extra_files: [
         'src/OpenCLExercise1_Basics.cl',
     ],
-    dependencies : [
+    dependencies: [
         core_dep,
         opencl_dep,
+        cnpy_dep,
     ],
 )

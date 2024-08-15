@@ -1,0 +1,146 @@
+[
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/Assert.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/Assert.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/Assert.cpp.o' -c ../lib/Core/Assert.cpp",
+    "file": "../lib/Core/Assert.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/Assert.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/CheckedCast.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/CheckedCast.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/CheckedCast.cpp.o' -c ../lib/Core/CheckedCast.cpp",
+    "file": "../lib/Core/CheckedCast.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/CheckedCast.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/Error.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/Error.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/Error.cpp.o' -c ../lib/Core/Error.cpp",
+    "file": "../lib/Core/Error.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/Error.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/Exception.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/Exception.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/Exception.cpp.o' -c ../lib/Core/Exception.cpp",
+    "file": "../lib/Core/Exception.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/Exception.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/Image.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/Image.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/Image.cpp.o' -c ../lib/Core/Image.cpp",
+    "file": "../lib/Core/Image.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/Image.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/Memory.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/Memory.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/Memory.cpp.o' -c ../lib/Core/Memory.cpp",
+    "file": "../lib/Core/Memory.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/Memory.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/NumericException.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/NumericException.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/NumericException.cpp.o' -c ../lib/Core/NumericException.cpp",
+    "file": "../lib/Core/NumericException.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/NumericException.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/OStream.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/OStream.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/OStream.cpp.o' -c ../lib/Core/OStream.cpp",
+    "file": "../lib/Core/OStream.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/OStream.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/StaticCache.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/StaticCache.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/StaticCache.cpp.o' -c ../lib/Core/StaticCache.cpp",
+    "file": "../lib/Core/StaticCache.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/StaticCache.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "cc -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/StrError.c.o' -MF 'lib/Core/8f6fc49@@Core@sta/StrError.c.o.d' -o 'lib/Core/8f6fc49@@Core@sta/StrError.c.o' -c ../lib/Core/StrError.c",
+    "file": "../lib/Core/StrError.c",
+    "output": "lib/Core/8f6fc49@@Core@sta/StrError.c.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/StringUtil.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/StringUtil.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/StringUtil.cpp.o' -c ../lib/Core/StringUtil.cpp",
+    "file": "../lib/Core/StringUtil.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/StringUtil.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/Time.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/Time.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/Time.cpp.o' -c ../lib/Core/Time.cpp",
+    "file": "../lib/Core/Time.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/Time.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/TimeSpan.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/TimeSpan.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/TimeSpan.cpp.o' -c ../lib/Core/TimeSpan.cpp",
+    "file": "../lib/Core/TimeSpan.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/TimeSpan.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/Type.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/Type.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/Type.cpp.o' -c ../lib/Core/Type.cpp",
+    "file": "../lib/Core/Type.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/Type.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/Core/8f6fc49@@Core@sta -I../lib/Core/../lib/fmt/include -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/Core/8f6fc49@@Core@sta/WindowsError.cpp.o' -MF 'lib/Core/8f6fc49@@Core@sta/WindowsError.cpp.o.d' -o 'lib/Core/8f6fc49@@Core@sta/WindowsError.cpp.o' -c ../lib/Core/WindowsError.cpp",
+    "file": "../lib/Core/WindowsError.cpp",
+    "output": "lib/Core/8f6fc49@@Core@sta/WindowsError.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/OpenCL/93d1729@@OpenCL@sta -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -DCL_TARGET_OPENCL_VERSION=120 -MD -MQ 'lib/OpenCL/93d1729@@OpenCL@sta/Device.cpp.o' -MF 'lib/OpenCL/93d1729@@OpenCL@sta/Device.cpp.o.d' -o 'lib/OpenCL/93d1729@@OpenCL@sta/Device.cpp.o' -c ../lib/OpenCL/Device.cpp",
+    "file": "../lib/OpenCL/Device.cpp",
+    "output": "lib/OpenCL/93d1729@@OpenCL@sta/Device.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/OpenCL/93d1729@@OpenCL@sta -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -DCL_TARGET_OPENCL_VERSION=120 -MD -MQ 'lib/OpenCL/93d1729@@OpenCL@sta/Error.cpp.o' -MF 'lib/OpenCL/93d1729@@OpenCL@sta/Error.cpp.o.d' -o 'lib/OpenCL/93d1729@@OpenCL@sta/Error.cpp.o' -c ../lib/OpenCL/Error.cpp",
+    "file": "../lib/OpenCL/Error.cpp",
+    "output": "lib/OpenCL/93d1729@@OpenCL@sta/Error.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/OpenCL/93d1729@@OpenCL@sta -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -DCL_TARGET_OPENCL_VERSION=120 -MD -MQ 'lib/OpenCL/93d1729@@OpenCL@sta/Event.cpp.o' -MF 'lib/OpenCL/93d1729@@OpenCL@sta/Event.cpp.o.d' -o 'lib/OpenCL/93d1729@@OpenCL@sta/Event.cpp.o' -c ../lib/OpenCL/Event.cpp",
+    "file": "../lib/OpenCL/Event.cpp",
+    "output": "lib/OpenCL/93d1729@@OpenCL@sta/Event.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/OpenCL/93d1729@@OpenCL@sta -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -DCL_TARGET_OPENCL_VERSION=120 -MD -MQ 'lib/OpenCL/93d1729@@OpenCL@sta/GetError.cpp.o' -MF 'lib/OpenCL/93d1729@@OpenCL@sta/GetError.cpp.o.d' -o 'lib/OpenCL/93d1729@@OpenCL@sta/GetError.cpp.o' -c ../lib/OpenCL/GetError.cpp",
+    "file": "../lib/OpenCL/GetError.cpp",
+    "output": "lib/OpenCL/93d1729@@OpenCL@sta/GetError.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/OpenCL/93d1729@@OpenCL@sta -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -DCL_TARGET_OPENCL_VERSION=120 -MD -MQ 'lib/OpenCL/93d1729@@OpenCL@sta/OpenCLLibLazy.cpp.o' -MF 'lib/OpenCL/93d1729@@OpenCL@sta/OpenCLLibLazy.cpp.o.d' -o 'lib/OpenCL/93d1729@@OpenCL@sta/OpenCLLibLazy.cpp.o' -c ../lib/OpenCL/OpenCLLibLazy.cpp",
+    "file": "../lib/OpenCL/OpenCLLibLazy.cpp",
+    "output": "lib/OpenCL/93d1729@@OpenCL@sta/OpenCLLibLazy.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/OpenCL/93d1729@@OpenCL@sta -Ilib -I../lib -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -DCL_TARGET_OPENCL_VERSION=120 -MD -MQ 'lib/OpenCL/93d1729@@OpenCL@sta/Program.cpp.o' -MF 'lib/OpenCL/93d1729@@OpenCL@sta/Program.cpp.o.d' -o 'lib/OpenCL/93d1729@@OpenCL@sta/Program.cpp.o' -c ../lib/OpenCL/Program.cpp",
+    "file": "../lib/OpenCL/Program.cpp",
+    "output": "lib/OpenCL/93d1729@@OpenCL@sta/Program.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -Ilib/cnpy/3bf12ac@@cnpy@sta -Ilib/cnpy -I../lib/cnpy -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -fPIC -MD -MQ 'lib/cnpy/3bf12ac@@cnpy@sta/cnpy.cpp.o' -MF 'lib/cnpy/3bf12ac@@cnpy@sta/cnpy.cpp.o.d' -o 'lib/cnpy/3bf12ac@@cnpy@sta/cnpy.cpp.o' -c ../lib/cnpy/cnpy.cpp",
+    "file": "../lib/cnpy/cnpy.cpp",
+    "output": "lib/cnpy/3bf12ac@@cnpy@sta/cnpy.cpp.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "cc -IOpenCLExercise1_Basics@exe -I. -I.. -Ilib -I../lib -Ilib/cnpy -I../lib/cnpy -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -O3 -g -DCL_TARGET_OPENCL_VERSION=120 -MD -MQ 'OpenCLExercise1_Basics@exe/meson-generated_OpenCLExercise1_Basics.cl.xxd.c.o' -MF 'OpenCLExercise1_Basics@exe/meson-generated_OpenCLExercise1_Basics.cl.xxd.c.o.d' -o 'OpenCLExercise1_Basics@exe/meson-generated_OpenCLExercise1_Basics.cl.xxd.c.o' -c 'OpenCLExercise1_Basics@exe/OpenCLExercise1_Basics.cl.xxd.c'",
+    "file": "OpenCLExercise1_Basics@exe/OpenCLExercise1_Basics.cl.xxd.c",
+    "output": "OpenCLExercise1_Basics@exe/meson-generated_OpenCLExercise1_Basics.cl.xxd.c.o"
+  },
+  {
+    "directory": "/home/sandy/Downloads/OpenCLExercise1_Basics/build",
+    "command": "c++ -IOpenCLExercise1_Basics@exe -I. -I.. -Ilib -I../lib -Ilib/cnpy -I../lib/cnpy -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -O3 -g -DCL_TARGET_OPENCL_VERSION=120 -MD -MQ 'OpenCLExercise1_Basics@exe/src_OpenCLExercise1_Basics.cpp.o' -MF 'OpenCLExercise1_Basics@exe/src_OpenCLExercise1_Basics.cpp.o.d' -o 'OpenCLExercise1_Basics@exe/src_OpenCLExercise1_Basics.cpp.o' -c ../src/OpenCLExercise1_Basics.cpp",
+    "file": "../src/OpenCLExercise1_Basics.cpp",
+    "output": "OpenCLExercise1_Basics@exe/src_OpenCLExercise1_Basics.cpp.o"
+  }
+]

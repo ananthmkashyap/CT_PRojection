@@ -1,0 +1,2 @@
+/home/sandy/Downloads/OpenCLExercise1_Basics/build/meson-private/cmake_core/CMakeFiles/rebuild_cache.dir
+/home/sandy/Downloads/OpenCLExercise1_Basics/build/meson-private/cmake_core/CMakeFiles/edit_cache.dir
